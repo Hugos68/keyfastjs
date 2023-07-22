@@ -1,0 +1,1 @@
+export { keyfast } from "./keyfast/keyfast";
