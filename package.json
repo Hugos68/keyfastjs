@@ -1,19 +1,25 @@
 {
-  "name": "keyfastjs",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Hugo Korte",
-  "license": "MIT",
-  "devDependencies": {
-    "@changesets/cli": "^2.26.2",
-    "tsup": "^7.1.0",
-    "typescript": "^5.1.6"
-  }
+	"name": "keyfastjs",
+	"version": "0.0.1",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"format": "pnpm exec prettier . --write",
+		"lint": "npx eslint .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Hugo Korte",
+	"license": "MIT",
+	"devDependencies": {
+		"@changesets/cli": "^2.26.2",
+		"@typescript-eslint/eslint-plugin": "^6.1.0",
+		"@typescript-eslint/parser": "^6.1.0",
+		"eslint": "^8.45.0",
+		"prettier": "3.0.0",
+		"tsup": "^7.1.0",
+		"typescript": "^5.1.6"
+	}
 }
