@@ -5,7 +5,7 @@
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"build": "tsup index.ts --format cjs,esm --dts",
 		"format": "pnpm exec prettier . --write",
 		"lint": "npx eslint .",
 		"test": "echo \"Error: no test specified\" && exit 1"

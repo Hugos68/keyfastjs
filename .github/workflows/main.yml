@@ -16,4 +16,6 @@ jobs:
                   node-version: 20.x
                   cache: pnpm
             - run: pnpm install
-            - run: pnpm lint && pnpm build
+            - run: pnpm format
+            - run: pnpm lint
+            - run: pnpm build
